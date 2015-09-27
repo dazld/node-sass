@@ -1,4 +1,19 @@
+
+# DO NOT USE THIS
+
+An experiment in how hard it would be to hack some trig functions into libsass
+answer: not very
+
+## added
+
+### `sin(..)`
+
+
+
+
 # node-sass
+
+
 
 <table>
   <tr>
