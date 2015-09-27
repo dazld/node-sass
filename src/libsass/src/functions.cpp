@@ -1114,6 +1114,36 @@ namespace Sass {
       return r;
     }
 
+    Signature sin_sig = "sin($number)";
+    BUILT_IN(sin)
+    {
+      Number* n = ARG("$number", Number);
+      Number* r = SASS_MEMORY_NEW(ctx.mem, Number, *n);
+      r->pstate(pstate);
+      r->value(std::sin(r->value()));
+      return r;
+    }
+
+    Signature cos_sig = "cos($number)";
+    BUILT_IN(cos)
+    {
+      Number* n = ARG("$number", Number);
+      Number* r = SASS_MEMORY_NEW(ctx.mem, Number, *n);
+      r->pstate(pstate);
+      r->value(std::cos(r->value()));
+      return r;
+    }
+
+    Signature tan_sig = "tan($number)";
+    BUILT_IN(tan)
+    {
+      Number* n = ARG("$number", Number);
+      Number* r = SASS_MEMORY_NEW(ctx.mem, Number, *n);
+      r->pstate(pstate);
+      r->value(std::tan(r->value()));
+      return r;
+    }
+
     Signature abs_sig = "abs($number)";
     BUILT_IN(abs)
     {

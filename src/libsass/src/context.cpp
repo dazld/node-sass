@@ -525,6 +525,9 @@ namespace Sass {
     register_function(ctx, round_sig, round, env);
     register_function(ctx, ceil_sig, ceil, env);
     register_function(ctx, floor_sig, floor, env);
+    register_function(ctx, sin_sig, sin, env);
+    register_function(ctx, cos_sig, cos, env);
+    register_function(ctx, tan_sig, tan, env);
     register_function(ctx, abs_sig, abs, env);
     register_function(ctx, min_sig, min, env);
     register_function(ctx, max_sig, max, env);
