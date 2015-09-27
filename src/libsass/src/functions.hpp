@@ -67,6 +67,9 @@ namespace Sass {
     extern Signature round_sig;
     extern Signature ceil_sig;
     extern Signature floor_sig;
+    extern Signature sin_sig;
+    extern Signature cos_sig;
+    extern Signature tan_sig;
     extern Signature abs_sig;
     extern Signature min_sig;
     extern Signature max_sig;
@@ -149,6 +152,9 @@ namespace Sass {
     BUILT_IN(round);
     BUILT_IN(ceil);
     BUILT_IN(floor);
+    BUILT_IN(sin);
+    BUILT_IN(cos);
+    BUILT_IN(tan);
     BUILT_IN(abs);
     BUILT_IN(min);
     BUILT_IN(max);
